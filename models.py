@@ -17,7 +17,7 @@ class ODEFunc(nn.Module):
     def forward(self, t, state):
         return self.net(state)
 
-class SNN_PINODE_Engine(nn.Module):
+class SPINN_Engine(nn.Module):
     def __init__(self, input_dim=4, hidden_dim=64, pred_len=6):
         super().__init__()
         self.pred_len = pred_len
