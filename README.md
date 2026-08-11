@@ -21,8 +21,8 @@ temporal modeling.
 
 ```bash
 # Clone the repository
-git clone [https://github.com/ANONYMOUS/SNN-PINODE.git](https://github.com/ANONYMOUS/SNN-PINODE.git)
-cd SNN-PINODE
+git clone [https://github.com/ANONYMOUS/SPINN.git](https://github.com/ANONYMOUS/SPINN.git)
+cd SPINN
 
 # Install dependencies
 pip install -r requirements.txt
