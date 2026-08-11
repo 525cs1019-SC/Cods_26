@@ -29,4 +29,3 @@ pip install -r requirements.txt
 
 # Run full pipeline and baseline benchmarks
 python main.py
-```
