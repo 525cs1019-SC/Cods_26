@@ -23,9 +23,13 @@ Official anonymous implementation of the **SPINN** framework for tropical cyclon
 
 ## Setup Instructions
 
-```bash
+### Raw Plain-Text (for Web Editors)
+
+If your editor keeps converting URLs into hyperlinks, paste this unformatted plain text:
+
+```text
 # Clone the repository
-git clone [https://github.com/ANONYMOUS/SPINN.git](https://github.com/ANONYMOUS/SPINN.git)
+git clone https://github.com/ANONYMOUS/SPINN.git
 cd SPINN
 
 # Install dependencies
