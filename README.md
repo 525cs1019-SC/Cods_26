@@ -1,6 +1,6 @@
-# SNN-PINODE: Physics-Informed Neural ODE with Spiking Neural Networks
+# SPINN: Physics-Informed Neural ODE with Spiking Neural Networks
 
-Official anonymous implementation of the **SNN-PINODE** framework for resilient spatiotemporal forecasting under out-of-distribution (OOD) weather events.
+Official anonymous implementation of the **SPINN** framework for forecasting under out-of-distribution (OOD) weather events.
 
 ## Key Features
 * **Spiking Encoder**: Energy-efficient LIF SNN temporal feature extractor.
