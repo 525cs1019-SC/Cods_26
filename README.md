@@ -17,6 +17,10 @@ Neural Network (SNN) architecture. The use of NODEs is based on
 a Physics-Informed Neural Network (PINN). The proposed model,
 known as SPINN, effectively combines physical laws with flexible
 temporal modeling.
+# SPINN: Physics-Informed Spiking Neural Network
+
+Official anonymous implementation of the **SPINN** framework for tropical cyclone-aware wind speed forecasting.
+
 ## Setup Instructions
 
 ```bash
@@ -29,3 +33,4 @@ pip install -r requirements.txt
 
 # Run full pipeline and baseline benchmarks
 python main.py
+
