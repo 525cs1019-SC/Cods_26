@@ -21,16 +21,15 @@ temporal modeling.
 
 Official anonymous implementation of the **SPINN** framework for tropical cyclone-aware wind speed forecasting.
 
-## Setup Instructions
-
-### Raw Plain-Text (for Web Editors)
-
-If your editor keeps converting URLs into hyperlinks, paste this unformatted plain text:
-
-```text
 # Clone the repository
 git clone https://github.com/ANONYMOUS/SPINN.git
 cd SPINN
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run full pipeline and baseline benchmarks
+python main.py
 
 # Install dependencies
 pip install -r requirements.txt
