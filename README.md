@@ -1,5 +1,4 @@
-# SPINN: A Physics-Informed Spiking Neural Network for Tropical
-Cyclone-Aware Wind Speed Forecasting
+# SPINN: A Physics-Informed Spiking Neural Network for Tropical Cyclone-Aware Wind Speed Forecasting
 
 Official anonymous implementation of the **SPINN** framework for forecasting under out-of-distribution (OOD) weather events.
 
