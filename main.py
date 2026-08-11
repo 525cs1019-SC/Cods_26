@@ -9,7 +9,7 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import xgboost as xgb
 
 from dataset import load_and_preprocess_data, LazyTimeSeriesDataset, get_valid_indices, SEQ_LEN, PRED_LEN
-from models import SNN_PINODE_Engine, GRU_Baseline, physics_loss_kernel
+from models import SPINN_Engine, GRU_Baseline, physics_loss_kernel
 
 warnings.filterwarnings('ignore')
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -65,7 +65,7 @@ def main():
     train_loader = DataLoader(LazyTimeSeriesDataset(train_s, idx_tr), batch_size=BATCH_SIZE, shuffle=True, drop_last=True)
 
     # Model Init
-    snn_model = SNN_PINODE_Engine().to(device)
+    snn_model = SPINN_Engine().to(device)
     gru_model = GRU_Baseline().to(device)
 
     opt_snn = torch.optim.AdamW(snn_model.parameters(), lr=2e-3, weight_decay=1e-4)
@@ -121,10 +121,10 @@ def main():
     p_xgb_od = chunked_xgb_eval(xgb_reg, test_od_s, idx_od)
 
     # Reporting
-    frameworks = ['SNN-PINODE', 'GRU', 'XGBoost']
+    frameworks = ['SPINN', 'GRU', 'XGBoost']
     scenarios = ['CLEAN', 'SPARSE', 'OOD']
     preds = {
-        'SNN-PINODE': (p_pin_cl, p_pin_sp, p_pin_od),
+        'SPINN': (p_pin_cl, p_pin_sp, p_pin_od),
         'GRU': (p_gru_cl, p_gru_sp, p_gru_od),
         'XGBoost': (p_xgb_cl, p_xgb_sp, p_xgb_od)
     }
